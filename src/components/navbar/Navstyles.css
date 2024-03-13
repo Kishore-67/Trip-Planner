@@ -1,19 +1,37 @@
-.h-wrapper{
-    background-color: black;
-    color: aliceblue;
-}
+*{
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    border-radius: 0%;
 
-.h-container{
+
+}
+nav{
+    display:flex;
+    align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 3.rem;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 
-.menu a{
-    gap: 2rem;
-    margin-left: 20%;
+title{
+    color: white;
 }
 
-.h-menu{
+nav ul{
+display:flex;
 
+}
+
+nav ul li{
+
+justify-content: space-between;
+margin-left: 3rem;
+}
+
+nav ul li a{
+    color: rgb(0, 136, 255);
+}
+.h wrapper{
+    color:rgb(255, 0, 0)
 }

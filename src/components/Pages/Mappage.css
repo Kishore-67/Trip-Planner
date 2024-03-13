@@ -1,0 +1,58 @@
+.map {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%; /* Take the full width of its container */
+    margin-top: 20px; /* Add some margin from the top */
+    border: 1px solid #ccc; /* Add a border for visualization */
+  }
+  .Mappage {
+    text-align: center;
+  }
+  .trip-planner-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .trip-planner-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .trip-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

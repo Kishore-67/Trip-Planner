@@ -31,4 +31,14 @@
         color: white;
 }
 
+  .App{
+    min-height: 100vh;
+    background: url('./wallpaperflare.com_wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  } 
+
+
+
 
