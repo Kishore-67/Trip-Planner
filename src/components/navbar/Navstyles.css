@@ -1,0 +1,19 @@
+.h-wrapper{
+    background-color: black;
+    color: aliceblue;
+}
+
+.h-container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.menu a{
+    gap: 2rem;
+    margin-left: 20%;
+}
+
+.h-menu{
+
+}
