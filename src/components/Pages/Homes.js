@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import './Homes.css';
 
- const Home = () => {
+
+
+const Home = ({ title, content }) => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="Home">
+      <p>HI 👋</p>
+      <p>Visiting the Best Planner for your adventurous trip</p>
+    </div>
 
+  );
+};
 
-export default  Home;
+export default Home;

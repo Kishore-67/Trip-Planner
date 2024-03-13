@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('./background.jpg') no-repeat;
+    background: url('./pexels-riccardo-307008.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -19,7 +19,7 @@
     border: 2px solid rgba(255, 255, 255, .2);
     background: transparent;
 
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     color:  rgb(255, 255, 255);
     border-radius: 10px;

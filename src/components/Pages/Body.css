@@ -1,0 +1,63 @@
+.text-animation-container1{
+    overflow: hidden; 
+    width: 100%; 
+    font-size: 50px;
+
+    .text-animation {
+        display: flex;
+        animation: moveText 38s linear infinite; 
+      }
+      
+      .animated-text {
+        margin-right: 60px; 
+     
+      }
+  }
+  
+
+
+  .text-animation-container2{
+    overflow: hidden; 
+    width: 100%; 
+    font-size: 100px;
+
+    .text-animation {
+        display: flex;
+        animation: moveText 36s linear infinite; 
+      }
+      
+      .animated-text {
+        margin-right: 60px; 
+     
+      }
+  }
+  
+
+
+  .text-animation-container3{
+    overflow: hidden; 
+    width: 100%; 
+    font-size: 76px;
+
+    .text-animation {
+        display: flex;
+        animation: moveText 33s linear infinite; 
+      }
+      
+      .animated-text {
+        margin-right: 60px; 
+     
+      }
+  }
+  
+
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%); /* Initial position */
+    }
+    100% {
+      transform: translateX(-100%); /* Move text to the left */
+      opacity: 0; /* Make text disappear */
+    }
+  }

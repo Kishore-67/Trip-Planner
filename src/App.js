@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbars.js'
 import {About } from './components/Pages/About.js'
 import {Contact} from './components/Pages/Contact.js'
 import Home from './components/Pages/Homes.js'
+import Body from './components/Pages/Body.js';
 import {LoginForm} from './components/Pages/Authentication/LoginForm.js'
 import {useNavigate} from 'react-router-dom'
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     <div className='App'>
      <Navbar/>
      <Home/>
+     <Body/>
     </div>
   )
 }
