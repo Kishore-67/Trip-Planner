@@ -26,7 +26,7 @@ export const LoginForm = () => {
             <a href='#'>Forgot password?</a>
         </div>
 
-            <button type="submit">Login</button>
+            <Link to={'/'}><button type="submit">Login</button></Link>
 
         <div className="register-link">
             <p>Don't have an account??  on <div><Link to={"/signup"}>Register</Link></div></p>

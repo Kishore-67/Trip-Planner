@@ -1,21 +1,35 @@
 .map {
-    height: 400px; /* Adjust the height as needed */
-    width: 100%; /* Take the full width of its container */
+    
+    
+    left: 20%;
+    height: 650px; /* Adjust the height as needed */
+    width: 750px; /* Take the full width of its container */
     margin-top: 20px; /* Add some margin from the top */
-    border: 1px solid #ccc; /* Add a border for visualization */
+    border: 1px solid black ; /* Add a border for visualization */
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(242, 162, 162);
+  }
+  .app-container{
+   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
   .Mappage {
+    
     text-align: center;
   }
   .trip-planner-container {
+    
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 10px solid #000000;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
   .trip-planner-heading {
+    text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
@@ -23,15 +37,17 @@
   
   .trip-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
   
   .form-label {
-    font-size: 16px;
+    font-size: 25px;
     color: #555;
   }
   
@@ -43,6 +59,7 @@
   }
   
   .submit-button {
+    margin-left: 0%;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -55,4 +72,53 @@
   .submit-button:hover {
     background-color: #0056b3;
   }
+ 
+  .suggestions-box {
+    box-shadow: 0 0 15px rgb(242, 162, 162);
+    position: absolute;
+    margin-left: 5%;
+    right:75%;
+    top: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 30px rgb(255, 0, 0);
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    width: 200px; /* Adjust width as needed */
+  }
+  .Distance{
+    box-shadow: 0 0 15px rgb(242, 162, 162);
+    position: absolute;
+    top: 15%;
+    margin-left: 5%;
+    right:70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 30px rgb(255, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .suggestions-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .suggestions-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-box li {
+    margin-bottom: 5px;
+  }
+
+  .suggestions-box ul li {
+    margin-bottom: 10px;
+  }
+
+  
   

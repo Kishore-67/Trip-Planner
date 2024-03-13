@@ -6,7 +6,8 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 export const SignUp = () => {
   return (
-    <div className='wrapper'>
+    <div className='parent'>
+    <div className='Signup'>
         <form action=" ">
             <h1>SignUp</h1>
 
@@ -35,13 +36,14 @@ export const SignUp = () => {
         <RiLockPasswordFill className='icon' />
         </div>
 
-        <button type="submit">Sign In</button>
+        <Link to={'/'}><button type="submit">Sign In</button></Link>
 
         <div className="register-link">
             <p>Already have an account? <div><Link to={'/Login'} >Login</Link></div></p>
         </div>
 
         </form>
+        </div>
         </div>
   )
 }

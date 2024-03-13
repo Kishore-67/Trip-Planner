@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('./background.jpg') no-repeat;
+    background-color: #000000;
     background-size: cover;
     background-position: center;
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
-.wrapper{ 
+.Signup{ 
     justify-content: center;
     align-items: center;
     width:420px;
@@ -23,11 +23,11 @@
     border-radius: 10px;
     padding: 30px 40px;
 }
-.wrapper h1{
+.Signup h1{
     font-size: 36px;
     text-align: center;
 }
-.wrapper .input-box{
+.Signup .input-box{
     position: relative;
     width: 100%;
     height: 50px;
@@ -57,7 +57,7 @@
     transform:translateY(-50%);
     font: size 16px;
 }
-.wrapper .remember-forgot{
+.Signup .remember-forgot{
     display: flex;
     justify-content: center;
     font-size: 14.5px;
@@ -75,7 +75,7 @@
 .remember-forgot a:hover{
     text-decoration: underline;
 }
-.wrapper button{
+.Signup button{
     width: 100px;
     height: 45px;
     background: #fff;
@@ -89,7 +89,7 @@
     font-weight: 700;
 
 }
-.wrapper .register-link{
+.Signup .register-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;

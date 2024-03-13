@@ -10,7 +10,7 @@ class Navbar extends Component {
                     <img src="https://static.vecteezy.com/system/resources/previews/029/152/214/original/beach-coconut-tree-ai-generate-png.png" alt="logo" width={100}/>
                     
                       <ul>
-                        <li><Link to={"/Home"}>Home</Link></li>
+                        <li><Link to={"/"}>Home</Link></li>
                         <li><Link to={"/Mappage"}>Get Started</Link></li>
                         <li><Link to={"/Contact"}>Contact</Link></li>
                         <li><Link to={"/Login"}>Login</Link></li>

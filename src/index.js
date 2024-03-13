@@ -5,6 +5,7 @@ import { RouterProvider , createBrowserRouter } from "react-router-dom";
 import { LoginForm } from "./components/Pages/Authentication/LoginForm";
 import {SignUp} from "./components/Pages/Authentication/SignUp"
 import   Mappage  from "./components/Pages/Mappage";
+import { Contact } from "./components/Pages/Contact";
 const appRouter = createBrowserRouter( [
    {
       path:'/',
@@ -22,6 +23,10 @@ const appRouter = createBrowserRouter( [
       path:'/Mappage',
       element:<Mappage/>
    },
+   {
+      path:'/Contact',
+      element:<Contact/>
+   }
    
 ])
 
