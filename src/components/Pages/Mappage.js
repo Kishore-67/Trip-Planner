@@ -10,12 +10,10 @@ function Mappage() {
   const [suggestions, setSuggestions] = useState([]);
   const [distance, setDistance] = useState({
     driving: '',
-    transit: '',
     walking: '',
   });
   const [duration, setDuration] = useState({
     driving: '',
-    transit: '',
     walking: '',
   });
 
@@ -25,7 +23,7 @@ function Mappage() {
       geocodeAddress(destination, (destinationLocation) => {
         initMap(originLocation, destinationLocation);
         calculateAndDisplayRoute(originLocation, destinationLocation, 'DRIVING');
-        calculateAndDisplayRoute(originLocation, destinationLocation, 'TRANSIT');
+       
         calculateAndDisplayRoute(originLocation, destinationLocation, 'WALKING');
         
         getTouristPlaces(destinationLocation);
@@ -48,10 +46,10 @@ function Mappage() {
       }
     });
   };
-
+  
   const initMap = (originLocation, destinationLocation) => {
     const map = new window.google.maps.Map(document.getElementById('map'), {
-      center: originLocation || { lat: 0, lng: 0 },
+      center: originLocation || { lat: 11.00017810444988, lng:76.9530386129395},
       zoom: 10
     });
 
@@ -167,13 +165,13 @@ function Mappage() {
             placeholder="Enter destination place"
           />
         </div>
-        <div className="Distance">
-          <h3>Distance</h3>
-          <div>Driving: {distance.driving} - {duration.driving}</div>
-          <div>Transit: {distance.transit} - {duration.transit}</div>
-          <div>Walking: {distance.walking} - {duration.walking}</div>
-        </div>
         <button type="submit" className="submit-button">Plan Trip</button>
+        {/* <div className="Distance">
+          <h3>Distances And Duration</h3>
+          <div>Driving: {distance.driving} - {duration.driving}</div>
+          <div>Walking: {distance.walking} - {duration.walking}</div>
+        </div> */}
+        
       </form>
       <div id="map" className="map"></div>
       <div className="suggestions-box">
@@ -181,7 +179,7 @@ function Mappage() {
         <ul>
           {suggestions.map((place, index) => (
             
-            <li key={index}>{index}. {place}</li>
+            <li key={index}> {place}</li>
             
           ))}
         </ul>

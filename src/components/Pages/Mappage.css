@@ -1,124 +1,128 @@
+/* Map Container */
 .map {
-    
-    
-    left: 20%;
-    height: 650px; /* Adjust the height as needed */
-    width: 750px; /* Take the full width of its container */
-    margin-top: 20px; /* Add some margin from the top */
-    border: 1px solid black ; /* Add a border for visualization */
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgb(242, 162, 162);
-  }
-  .app-container{
-   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-  }
-  .Mappage {
-    
-    text-align: center;
-  }
-  .trip-planner-container {
-    
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 10px solid #000000;
-    border-radius: 5px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  }
-  .trip-planner-heading {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .trip-form {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    
-  }
-  
-  .form-group {
-    margin-bottom: 0px;
-  }
-  
-  .form-label {
-    font-size: 25px;
-    color: #555;
-  }
-  
-  .form-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    margin-left: 0%;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
- 
-  .suggestions-box {
-    box-shadow: 0 0 15px rgb(242, 162, 162);
-    position: absolute;
-    margin-left: 5%;
-    right:75%;
-    top: 250px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 30px rgb(255, 0, 0);
-    padding: 20px;
-    margin-top: 5%;
-    margin-bottom: 20px;
-    width: 200px; /* Adjust width as needed */
-  }
-  .Distance{
-    box-shadow: 0 0 15px rgb(242, 162, 162);
-    position: absolute;
-    top: 15%;
-    margin-left: 5%;
-    right:70%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 30px rgb(255, 0, 0);
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 300px; /* Adjust width as needed */
-  }
-  
-  .suggestions-box h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .suggestions-box ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .suggestions-box li {
-    margin-bottom: 5px;
-  }
+  width: 80%;
+  max-width: 800px;
+  height: 500px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  border: none;
+  margin-left: 0;
+  margin-right: auto;
+}
 
-  .suggestions-box ul li {
-    margin-bottom: 10px;
-  }
+/* Overall Container */
+.app-container {
+  background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-  
-  
+/* Heading */
+.trip-planner-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Form Layout */
+.trip-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end; /* align button with inputs */
+  margin-bottom: 30px;
+}
+
+/* Input Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  width: 250px;
+  outline: none;
+}
+
+/* Button */
+.submit-button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 42px;
+  align-self: flex-end;
+}
+
+.submit-button:hover {
+  background-color: #0070d1;
+}
+
+/* Suggestions Box */
+.suggestions-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 150px;
+}
+
+/* Distance Box */
+.Distance {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 300px;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Typography inside boxes */
+.Distance h3,
+.suggestions-box h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+.suggestions-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.suggestions-box li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}

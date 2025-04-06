@@ -23,7 +23,7 @@
 
     .text-animation {
         display: flex;
-        animation: moveText 36s linear infinite; 
+        animation: moveText 37s linear infinite; 
       }
       
       .animated-text {
@@ -38,10 +38,12 @@
     overflow: hidden; 
     width: 100%; 
     font-size: 76px;
+    font-weight: 100;
+    color:   #000000 ;
 
     .text-animation {
         display: flex;
-        animation: moveText 33s linear infinite; 
+        animation: moveText 36s linear infinite; 
       }
       
       .animated-text {

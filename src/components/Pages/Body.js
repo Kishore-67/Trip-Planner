@@ -24,12 +24,7 @@ export const Body = () => {
       <span className="animated-text">Istanbul</span>
       <span className="animated-text">Dubai</span>
       <span className="animated-text">Mexico</span>
-      </div>
-   </div>
-   
-    <div className="text-animation-container2">
-    <div className="text-animation">
-    <span className="animated-text">Muscat</span>
+      <span className="animated-text">Muscat</span>
       <span className="animated-text">Bagan</span>
       <span className="animated-text">Vatican</span>
       <span className="animated-text">Sydney</span>
@@ -37,9 +32,6 @@ export const Body = () => {
       <span className="animated-text">Porto</span>
       </div>
    </div>
-
-
-
   </div>
   );
 };
